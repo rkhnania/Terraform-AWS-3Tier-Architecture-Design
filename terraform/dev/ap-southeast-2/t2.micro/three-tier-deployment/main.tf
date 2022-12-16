@@ -1,7 +1,7 @@
 # --- root/main.tf ---
 
 provider "aws" {
-  region = local.location
+  region = "ap-southeast-2"
 }
 
 locals {
@@ -19,7 +19,7 @@ module "networking" {
   public_sn_count   = 2
   private_sn_count  = 2
   db_subnet_group   = true
-  availabilityzone  = "us-east-1a"
+  availabilityzone  = "ap-southeast-2a"
   azs               = 2
 }
 
