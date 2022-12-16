@@ -19,7 +19,7 @@ module "networking" {
   public_sn_count   = 2
   private_sn_count  = 2
   db_subnet_group   = true
-  availabilityzone  = "us-east-1a"
+  availabilityzone  = "ap-southeast-2a"
   azs               = 2
 }
 
@@ -63,5 +63,3 @@ module "loadbalancing" {
   listener_port           = 80
   listener_protocol       = "HTTP"
   azs                     = 2
-}
-
