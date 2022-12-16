@@ -63,3 +63,4 @@ module "loadbalancing" {
   listener_port           = 80
   listener_protocol       = "HTTP"
   azs                     = 2
+}
